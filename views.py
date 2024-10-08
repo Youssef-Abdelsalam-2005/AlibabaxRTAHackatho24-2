@@ -3,7 +3,11 @@ import json
 import pandas as pd
 import folium
 from folium.plugins import HeatMap
+
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 
 # Sample data
 
